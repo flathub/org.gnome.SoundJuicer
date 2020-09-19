@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.SoundJuicer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "command": "sound-juicer",
     "finish-args": [
@@ -198,7 +198,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/sound-juicer.git",
-                    "commit": "4f3b89d60aaac2357df86311eeb236cfbeb49c85"
+                    "commit": "97c62e1a97821ea7bd0fb361fdf5d3ab59463a38",
+                    "tag": "3.38.0"
                 }
             ]
         }
