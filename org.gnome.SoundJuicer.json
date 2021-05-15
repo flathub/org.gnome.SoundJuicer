@@ -20,7 +20,7 @@
         /* Migrate DConf settings from the host */
         "--metadata=X-DConf=migrate-path=/org/gnome/sound-juicer/",
         /* optical media detection */
-        "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*",
+        "--talk-name=org.gtk.vfs.*", "--filesystem=xdg-run/gvfsd",
         /* Ensure cdda gstreamer plugin is picked found for audio CD's */
         "--env=GST_PLUGIN_PATH=/app/lib/codecs/lib/gstreamer-1.0"
     ],
