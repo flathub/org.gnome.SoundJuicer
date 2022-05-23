@@ -175,6 +175,22 @@
         /* libbrasero-media is required for optical disc enumeration */
         {
             "name": "libbrasero",
+            "config-opts": [
+              "--disable-static",
+              "--disable-gtk-doc",
+              "--disable-nautilus",
+              "--disable-libburnia",
+              "--disable-cdrtools",
+              "--disable-cdrdao",
+              "--disable-cdrkit",
+              "--disable-growisofs",
+              "--disable-search",
+              "--disable-playlist",
+              "--disable-preview",
+              "--disable-inotify",
+              "--enable-introspection=no",
+              "--disable-caches"
+            ],
             "sources": [
                 {
                     "type": "archive",
