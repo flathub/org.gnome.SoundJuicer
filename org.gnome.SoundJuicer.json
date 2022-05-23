@@ -25,7 +25,9 @@
         "--env=GST_PLUGIN_PATH=/app/lib/codecs/lib/gstreamer-1.0"
     ],
     "cleanup": [
+      "*.la",
       "/include",
+      "/lib/pkgconfig/",
       "/share/bash-completion"
     ],
     "modules": [
