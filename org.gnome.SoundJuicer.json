@@ -24,7 +24,10 @@
         /* Ensure cdda gstreamer plugin is picked found for audio CD's */
         "--env=GST_PLUGIN_PATH=/app/lib/codecs/lib/gstreamer-1.0"
     ],
-    "cleanup": [ "/include", "/share/bash-completion" ],
+    "cleanup": [
+      "/include",
+      "/share/bash-completion"
+    ],
     "modules": [
         /* gst-plugins-base needs cdparanoia to add support for cdda */
         {
