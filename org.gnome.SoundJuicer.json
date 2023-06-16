@@ -196,7 +196,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/sound-juicer.git",
-                    "commit": "06a8c72f0f916f23bb3cc647fe2aff43de710132"
+                    "tag": "3.40.0"
                 }
             ]
         }
