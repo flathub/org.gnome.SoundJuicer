@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.SoundJuicer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "sound-juicer",
     "finish-args": [
@@ -53,6 +53,18 @@
                 }
             ]
         },
+        /* utfcpp is required by taglib */
+        {
+            "name": "utfcpp",
+            "buildsystem": "cmake",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/nemtrif/utfcpp.git",
+                    "tag": "v4.0.5"
+                }
+            ]
+        },
         /* To encode in MP3 */
         {
           "name": "taglib",
@@ -67,8 +79,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "http://taglib.github.io/releases/taglib-1.11.1.tar.gz",
-              "sha256": "b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b"
+              "url": "https://github.com/taglib/taglib/releases/download/v2.0.1/taglib-2.0.1.tar.gz",
+              "sha256": "08c0a27b96aa5c4e23060fe0b6f93102ee9091a9385257b9d0ddcf467de0d925"
             }
          ]
         },
@@ -87,13 +99,13 @@
                 "-Dgst-plugins-good:lame=enabled",
                 "-Dgst-plugins-good:isomp4=enabled",
                 "-Dgst-plugins-good:flac=enabled",
+                "-Dgst-plugins-good:wavenc=enabled",
+                "-Dgst-plugins-good:xingmux=enabled",
                 "-Dgst-plugins-bad:fdkaac=enabled",
-                "-Dgst-plugins-ugly:xingmux=enabled",
                 "-Dpython=disabled",
                 "-Ddevtools=disabled",
                 "-Dges=disabled",
                 "-Drtsp_server=disabled",
-                "-Domx=disabled",
                 "-Dsharp=disabled",
                 "-Dgst-examples=disabled",
                 "-Dtests=disabled",
@@ -112,8 +124,8 @@
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
-                    "commit" : "8dbfc89a850d484a27937eb882978251bfce06b3",
-                    "tag": "1.20.2"
+                    "commit" : "da69285863780ce0ebb51482edcf1d54c7c29533",
+                    "tag": "1.24.3"
                 }
             ]
         },
@@ -128,8 +140,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.webdav.org/neon/neon-0.30.2.tar.gz",
-                    "sha256": "db0bd8cdec329b48f53a6f00199c92d5ba40b0f015b153718d1b15d3d967fbca"
+                    "url": "https://notroj.github.io/neon/neon-0.33.0.tar.gz",
+                    "sha256": "659a5cc9cea05e6e7864094f1e13a77abbbdbab452f04d751a8c16a9447cf4b8"
                 }
             ]
         },
@@ -139,8 +151,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/metabrainz/libdiscid/archive/v0.6.2.tar.gz",
-                    "sha256": "a9b73b030603ce707941a3aab4f46649fa5029025e7e2bfbbe0c3c93a86d7b20"
+                    "url": "https://github.com/metabrainz/libdiscid/releases/download/v0.6.4/libdiscid-0.6.4.tar.gz",
+                    "sha256": "dd5e8f1c9aead442e23b749a9cc9336372e62e88ad7079a2b62895b0390cb282"
                 }
             ],
             "cleanup": [
@@ -184,8 +196,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.acc.umu.se/pub/gnome/sources/brasero/3.12/brasero-3.12.2.tar.xz",
-                    "sha256": "6822166f9d08efcf8d900cab6f563e87f49f0e078ca10595dcd908498ef12041"
+                    "url": "https://ftp.acc.umu.se/pub/gnome/sources/brasero/3.12/brasero-3.12.3.tar.xz",
+                    "sha256": "87749eae33a141207d1b00be233b6d8045982ed3249ed4b98dae1f3a975fea15"
                 }
             ]
         },
