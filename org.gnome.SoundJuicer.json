@@ -197,6 +197,10 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/sound-juicer.git",
                     "tag": "3.40.0"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-metainfo-Add-missing-launchable-tag.patch"
                 }
             ]
         }
