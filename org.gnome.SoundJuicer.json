@@ -119,13 +119,29 @@
                 "-Dugly=enabled"
             ],
             "cleanup": [ "/share/gtk-doc" ],
+            /*
+             * WARNING: The gstreamer version used has to match the one shipped with the
+             * org.gnome.Platform package! To check the version in the platform package,
+             * you can use the following commands:
+             *
+             * $ flatpak run --command=bash org.gnome.Platform
+             *
+             * (If multiple org.gnome.Platform versions are installed, choose the correct one)
+             *
+             * [📦 org.gnome.Platform ~]$ gst-inspect-1.0 --version
+             * gst-inspect-1.0 version 1.22.12
+             * GStreamer 1.22.12
+             * freedesktop-sdk
+             *
+             * In this example, the gstreamer version shipped with the org.gnome.Platform is
+             * 1.22.12.
+             */
             "sources": [
                 {
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
-                    "commit" : "da69285863780ce0ebb51482edcf1d54c7c29533",
-                    "tag": "1.24.3"
+                    "tag": "1.22.12"
                 }
             ]
         },
