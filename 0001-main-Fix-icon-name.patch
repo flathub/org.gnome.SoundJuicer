@@ -1,0 +1,30 @@
+From f4427c1d539e4ca4584359f6cb6033e09539be62 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ball=C3=B3=20Gy=C3=B6rgy?= <ballogyor@gmail.com>
+Date: Sun, 1 Sep 2024 09:25:12 +0000
+Subject: [PATCH] main: Fix icon name
+
+The icon is called 'org.gnome.SoundJuicer', not 'sound-juicer'.
+Also set prgname to application ID to ensure that Wayland compositors
+could match the window with the application and show the appropriate
+icon for them.
+---
+ src/sj-main.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/sj-main.c b/src/sj-main.c
+index 3d1da519218a..48bc0bab86d0 100644
+--- a/src/sj-main.c
++++ b/src/sj-main.c
+@@ -1751,7 +1751,8 @@ startup_cb (GApplication *app, gpointer user_data)
+ 
+   sj_debug_init ();
+ 
+-  gtk_window_set_default_icon_name ("sound-juicer");
++  g_set_prgname ("org.gnome.SoundJuicer");
++  gtk_window_set_default_icon_name ("org.gnome.SoundJuicer");
+ 
+   metadata = sj_metadata_getter_new ();
+ 
+-- 
+2.49.0
+
