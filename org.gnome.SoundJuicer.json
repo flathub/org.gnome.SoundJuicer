@@ -90,6 +90,7 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Dauto_features=disabled",
+                "-Dtools=enabled",
                 "-Dgst-plugins-base:cdparanoia=enabled",
                 "-Dgst-plugins-base:ogg=enabled",
                 "-Dgst-plugins-base:vorbis=enabled",
