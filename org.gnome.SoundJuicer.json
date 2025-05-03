@@ -212,8 +212,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.acc.umu.se/pub/gnome/sources/brasero/3.12/brasero-3.12.3.tar.xz",
+                    "url": "https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz",
                     "sha256": "87749eae33a141207d1b00be233b6d8045982ed3249ed4b98dae1f3a975fea15"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Fix-gcc-14.x-build-failure-due-to-Wincompatible-poin.patch"
                 }
             ]
         },
