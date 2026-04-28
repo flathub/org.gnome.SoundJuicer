@@ -75,7 +75,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nemtrif/utfcpp.git",
-                    "tag": "v4.0.5"
+                    "tag": "v4.0.9",
+                    "commit": "63d64de49fd6b829f7c8694df5ab2ee625cb7134"
                 }
             ]
         },
