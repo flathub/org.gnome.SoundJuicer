@@ -247,7 +247,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/sound-juicer.git",
-                    "tag": "3.40.0"
+                    "tag": "3.40.0",
+                    "commit": "799286c80b998b473309f39d296d918c187d66d7"
                 },
                 {
                     "type": "patch",
