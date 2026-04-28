@@ -125,11 +125,7 @@
              * org.gnome.Platform package! To check the version in the platform package,
              * you can use the following commands:
              *
-             * $ flatpak run --command=bash org.gnome.Platform
-             *
-             * (If multiple org.gnome.Platform versions are installed, choose the correct one)
-             *
-             * [📦 org.gnome.Platform ~]$ gst-inspect-1.0 --version
+             * $ flatpak run --command=gst-inspect-1.0 org.gnome.Platform --version
              * gst-inspect-1.0 version 1.22.12
              * GStreamer 1.22.12
              * freedesktop-sdk
